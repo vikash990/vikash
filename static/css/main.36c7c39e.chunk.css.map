@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.css","sideDrawer.css"],"names":[],"mappings":"AAIA,UAHE,WAQF,CALA,KACE,QAAQ,CACR,SAAS,CACT,sBAEF,CCTA,kBACI,uBACJ","file":"main.36c7c39e.chunk.css","sourcesContent":["html {\n  height:100%;\n}\n\nbody {\n  margin:0;\n  padding:0;\n  font-family: sans-serif;\n  height:100%;\n}",".side-drawer.open {\r\n    transform:translateX(0);\r\n}"]}
