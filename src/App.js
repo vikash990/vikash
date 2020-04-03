@@ -13,9 +13,7 @@ import SideDrawer from './Components/Slider/sideDrawer.js';
 import BackDrop from './Components/BackDrop/backDrop.js';
 
 const MainWrapper =styled('div')`
-
   height:100%;
-
 `
  
 const routeItems = [

@@ -44,6 +44,20 @@ const SliderToggleWrapper=styled('div')`
        display:none;
    }
 `;
+const AnchorTagWrapper=styled('a')`
+display: flex;
+flex-direction: column;
+padding: 0 10px;
+justify-content: center;
+color:white;
+text-decoration:none;
+&:hover {
+  
+  color:black;
+  text-decoration:none;
+}
+
+`;
 
 
 class Header extends React.Component{
@@ -59,8 +73,9 @@ class Header extends React.Component{
            <NavLinkWrapper to ="/contact" exact >Contact</NavLinkWrapper>
            <NavLinkWrapper to ="/new" exact >New</NavLinkWrapper>
             <Spacer/>
-           <NavLinkWrapper to ="/apply" exact >Apply</NavLinkWrapper>
-       </NavWrapper>
+           
+       <AnchorTagWrapper target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfu0Iw5dSJNbymQetE7trMsoil-WWqUfylVgyg7GC0TYjdECw/viewform?vc=0&c=0&w=1">Apply</AnchorTagWrapper> 
+        </NavWrapper>
         );
 
     }

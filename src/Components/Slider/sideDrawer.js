@@ -13,7 +13,8 @@ const NavWrapper = styled('div')`
    position:fixed;
    top:0;
    left:0;
-   width:80%;
+   padding:10px 10px;
+   width:30%;
    max-width:400px;
    z-index:200;
    transform:translateX(-100%);
