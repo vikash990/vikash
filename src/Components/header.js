@@ -53,6 +53,9 @@ justify-content: center;
 color:white;
 text-decoration:none;
 background-color:green;
+opacity: 0.9;
+border: 1px solid white;
+  border-radius: 10px;
 &:hover {
   
   color:black;

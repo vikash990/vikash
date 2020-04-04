@@ -10,8 +10,11 @@ import Apply from './Components/apply.js';
 import About from './Components/about.js';
 import Courses from './Components/courses.js';
 import Contact from './Components/contact.js';
+import OurTeam from './Components/our-team.js';
+import SuccessStories from './Components/success-stories';
 import SideDrawer from './Components/Slider/sideDrawer.js';
 import BackDrop from './Components/BackDrop/backDrop.js';
+import Footer from './Components/footer.js';
 
 const MainWrapper =styled('div')`
   height:100%;
@@ -29,7 +32,7 @@ const routeItems = [
 },
 {
   path: '/courses',
-  component:About
+  component:Courses
 },
 {
   path:'/contact',
@@ -43,6 +46,14 @@ const routeItems = [
       path: '/apply',
       component: Apply
   },
+  {
+    path: '/our-team',
+    component: OurTeam
+},
+{
+  path: '/success-stories',
+  component: SuccessStories
+},
 ];
 
 
@@ -78,6 +89,7 @@ class App extends React.Component{
             ))
            }
         </MainWrapper>
+        <Footer/>
       </Router>
       );
   }

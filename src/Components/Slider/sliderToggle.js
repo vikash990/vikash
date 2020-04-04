@@ -39,7 +39,7 @@ const Spacer = styled('div')`
 `;
 const ComapnyNameWrapper = styled('h4')`
      color:white;
-     padding:4px 60px;
+     padding:4px 70px;
 
 `
 const NavLinkWrapper= styled(NavLink)`
@@ -67,6 +67,7 @@ justify-content: center;
 color:white;
 text-decoration:none;
 background-color:green;
+box-shadow:5px 10px;
 &:hover {
   
  color:black;
