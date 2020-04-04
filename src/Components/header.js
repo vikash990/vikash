@@ -52,15 +52,14 @@ padding: 0 10px;
 justify-content: center;
 color:white;
 text-decoration:none;
+background-color:green;
 &:hover {
   
   color:black;
   text-decoration:none;
 }
 
-@media(max-width:769px){
-    display:none;
-}
+
 
 `;
 const ComapnyNameWrapper = styled('h4')`

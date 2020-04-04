@@ -66,9 +66,10 @@ padding: 0 10px;
 justify-content: center;
 color:white;
 text-decoration:none;
+background-color:green;
 &:hover {
   
-  color:black;
+ color:black;
   text-decoration:none;
 }
 
@@ -83,7 +84,6 @@ const SliderToggle = props => (
         <ButtonLine/>
     </ButtonWrapper>
     <ComapnyNameWrapper>DevikTech </ComapnyNameWrapper> 
-    <AnchorTagWrapper target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfu0Iw5dSJNbymQetE7trMsoil-WWqUfylVgyg7GC0TYjdECw/viewform?vc=0&c=0&w=1">Apply</AnchorTagWrapper> 
  </NavWrapper>
 );
 
