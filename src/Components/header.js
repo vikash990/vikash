@@ -10,7 +10,7 @@ const NavWrapper = styled('div')`
         flex-direction: row;
         height:60px;
         padding:12px 15px 12px 15px;
-        background: mediumseagreen;
+        background: rgba(0, 0, 0, 0.9);
             
 
     `;
@@ -44,6 +44,7 @@ const SliderToggleWrapper=styled('div')`
        display:none;
    }
 `;
+
 const AnchorTagWrapper=styled('a')`
 display: flex;
 flex-direction: column;
@@ -57,8 +58,19 @@ text-decoration:none;
   text-decoration:none;
 }
 
-`;
+@media(max-width:769px){
+    display:none;
+}
 
+`;
+const ComapnyNameWrapper = styled('h4')`
+     color:white;
+     padding:4px 300px;
+     @media(max-width:769px){
+        display:none;
+    }
+
+`
 
 class Header extends React.Component{
 
@@ -70,8 +82,10 @@ class Header extends React.Component{
             </SliderToggleWrapper>
            <NavLinkWrapper to ="/" exact >Home</NavLinkWrapper>
            <NavLinkWrapper to ="/about" exact >About</NavLinkWrapper>
+           <NavLinkWrapper to ="/courses" exact >Courses</NavLinkWrapper>
            <NavLinkWrapper to ="/contact" exact >Contact</NavLinkWrapper>
            <NavLinkWrapper to ="/new" exact >New</NavLinkWrapper>
+           <ComapnyNameWrapper>DevikTech </ComapnyNameWrapper> 
             <Spacer/>
            
        <AnchorTagWrapper target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfu0Iw5dSJNbymQetE7trMsoil-WWqUfylVgyg7GC0TYjdECw/viewform?vc=0&c=0&w=1">Apply</AnchorTagWrapper> 
@@ -79,7 +93,5 @@ class Header extends React.Component{
         );
 
     }
-
-
 }
 export default Header;

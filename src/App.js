@@ -8,6 +8,7 @@ import Header from './Components/header.js';
 import Home from './Components/home.js';
 import Apply from './Components/apply.js';
 import About from './Components/about.js';
+import Courses from './Components/courses.js';
 import Contact from './Components/contact.js';
 import SideDrawer from './Components/Slider/sideDrawer.js';
 import BackDrop from './Components/BackDrop/backDrop.js';
@@ -24,6 +25,10 @@ const routeItems = [
 },
 {
   path: '/about',
+  component:About
+},
+{
+  path: '/courses',
   component:About
 },
 {

@@ -8,7 +8,7 @@ import './sideDrawer.css';
 
 const NavWrapper = styled('div')`
    height:100%;
-   background:grey;
+   background: rgba(0, 0, 0, 0.9);
    box-shadow:2px 0px 5px rbga(0,0,0,0.5);
    position:fixed;
    top:0;
@@ -44,9 +44,9 @@ const SideDrawer = props => {
      <NavWrapper className={drawerClasses}>        
            <NavLinkWrapper to ="/" exact >Home</NavLinkWrapper>
            <NavLinkWrapper to ="/about" exact >About</NavLinkWrapper>
+           <NavLinkWrapper to ="/courses" exact >Courses</NavLinkWrapper>
            <NavLinkWrapper to ="/contact" exact >Contact</NavLinkWrapper>
            <NavLinkWrapper to ="/new" exact >New</NavLinkWrapper>
-           <NavLinkWrapper to ="/apply" exact >Apply</NavLinkWrapper>
     </NavWrapper>
     )
 
