@@ -5,8 +5,8 @@ import { Row, Col } from 'reactstrap';
 
 import logof from '../Images/facebook.png';
 import logot from '../Images/twitter.png';
-import logol from '../Images/linkdin.png';
-import logoi from '../Images/instagram.jpg';
+import logol from '../Images/linkedin.png';
+import logoi from '../Images/instagram.png';
 
 const FooterWrapper = styled('div')`
      display:flex;
@@ -15,7 +15,7 @@ const FooterWrapper = styled('div')`
 
 
 
-`
+`;
 
 const RowWrapper = styled(Row)`
      display:flex;
@@ -36,7 +36,7 @@ const FollowWrapper = styled('div')`
          display:flex;
          flex-direction:row;
          justify-content:space-around;
-         height:50px;
+         height:60px;
          background-color:green;
          padding-top:10px;
          opacity: 0.9;
@@ -61,13 +61,14 @@ const SocialLinkWrapper= styled('div')`
 
 const AnchorWrapper = styled('a')`
  
-      
-
-
 
 `;
 
+const Head4Wrapper = styled('h4')`
+      color:green;
 
+
+`;
 
 const footerItems = [
     
@@ -98,12 +99,12 @@ class Footer extends React.Component{
             <FooterWrapper>
            <RowWrapper>
                <ColWrapper xs={6} sm={3} >
-                     <h4>K-12 </h4>
+                     <Head4Wrapper>K-12 </Head4Wrapper>
                       <p>Python(Junior)</p>
                       <p>Web Development(Junior)</p>
               </ColWrapper>
                <ColWrapper xs={6} sm={3}>               
-                      <h4>Courses </h4>
+                      <Head4Wrapper>Courses </Head4Wrapper>
                       <p>C</p>
                       <p>C++</p> 
                       <p>Python</p> 
@@ -115,13 +116,13 @@ class Footer extends React.Component{
                       <p>Algorithm</p>   
                </ColWrapper>
                <ColWrapper xs={6} sm={3}>
-                      <h4>Work with Us</h4>
+                      <Head4Wrapper>Work with Us</Head4Wrapper>
                        <p>Instructor</p>
                        <p>Marketing</p> 
                        <p>Content Development</p>                
                </ColWrapper>
                <ColWrapper xs={6} sm={3}>                
-                      <h4>Contact Us</h4>
+                      <Head4Wrapper>Contact Us</Head4Wrapper>
                        <p>9117018454</p>
                        <p>6299172103</p>                 
                </ColWrapper>        

@@ -4,6 +4,7 @@ import Route from 'react-router-dom/Route';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styled from "styled-components";
 
+import InfoBar from './Components/infoBar.js';
 import Header from './Components/header.js';
 import Home from './Components/home.js';
 import Apply from './Components/apply.js';
@@ -18,7 +19,7 @@ import Footer from './Components/footer.js';
 
 const MainWrapper =styled('div')`
   height:100%;
-`
+`;
  
 const routeItems = [
   {
@@ -80,6 +81,7 @@ class App extends React.Component{
     return(
       <Router>
         <MainWrapper>
+          <InfoBar/>
           <Header drawerClickHandler={this.drawerToggleClickedHandler}/>
           <SideDrawer show={this.state.sideDrawerOpen}/>
           {backDrop}
