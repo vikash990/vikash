@@ -72,7 +72,7 @@ const ComapnyNameWrapper = styled('h4')`
         display:none;
     }
 
-`
+`;
 
 class Header extends React.Component{
 

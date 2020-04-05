@@ -16,6 +16,8 @@ import SuccessStories from './Components/success-stories';
 import SideDrawer from './Components/Slider/sideDrawer.js';
 import BackDrop from './Components/BackDrop/backDrop.js';
 import Footer from './Components/footer.js';
+import KnowMoreJunior from './Components/knowMoreJunior.js';
+import KnowMoreSenior from './Components/knowMoreSenior.js';
 
 const MainWrapper =styled('div')`
   height:100%;
@@ -54,6 +56,16 @@ const routeItems = [
 {
   path: '/success-stories',
   component: SuccessStories
+},
+{
+    path: '/knowMoreJunior',
+    component: KnowMoreJunior
+
+},
+{
+    path: '/knowMoreSenior',
+    component: KnowMoreSenior
+
 },
 ];
 
