@@ -76,20 +76,21 @@ const KnowMoreWrapper=styled('div')`
 `;
 
 const AllCourseWrapper = styled('div')`
+       display:flex;
+       flex-wrap:wrap;
     
-    
-   
-    
-
 `;
 const CourseWrapper = styled('div')`
   display:flex;
   flex-direction:column;
-  margin:60px 100px;
+  justify-content:space-around;
+  margin:60px 40px 60px 70px;
   width:220px;
-  padding:10px 5px 5px 30px;
+  height:200px;
+  
   color:white;
   background-color:black;
+  border-radius:14px;
   box-shadow: 3px 5px 10px 10px green;
            @media(max-width:768px) {
           margin:30px 50px;
@@ -97,12 +98,21 @@ const CourseWrapper = styled('div')`
   
 `;
 const HeadingSubWrapper = styled('div')`
+   text-align:center;
+  
   
 `;
 const SubjectWrapper = styled('div')`
-  
+   
+    text-align:center;
 `;
 const TimeFeesWrapper = styled('div')`
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    
+    text-align:center;
+    
   
 `;
 
@@ -116,7 +126,7 @@ const subjectInfo= [
 
      },
      {
-         heading:"Python Junior",
+         heading:"WebDevelopment Junior",
          subject:"HTML,CSS,JavaScript",
          duration:"3 months",
          fees:"5000/-"
@@ -156,7 +166,7 @@ const subjectInfo= [
      {
          
          heading:"MERN Stack",
-         subject:"MongoDb,Expressjs,Reactjs,NodeJs",
+         subject:"MongoDb,Express,React,Nodejs",
          duration:"4 months",
          fees:"6000/-"
 
