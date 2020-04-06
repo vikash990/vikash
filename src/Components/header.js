@@ -86,7 +86,7 @@ class Header extends React.Component{
            <NavLinkWrapper to ="/about" exact >About</NavLinkWrapper>
            <NavLinkWrapper to ="/courses" exact >Courses</NavLinkWrapper>
            <NavLinkWrapper to ="/contact" exact >Contact</NavLinkWrapper>
-           <NavLinkWrapper to ="/new" exact >New</NavLinkWrapper>
+           <NavLinkWrapper to ="/currentClass" exact >Current Classes</NavLinkWrapper>
            <ComapnyNameWrapper>DevikTech </ComapnyNameWrapper> 
             <Spacer/>
            

@@ -7,6 +7,7 @@ import styled from "styled-components";
 import InfoBar from './Components/infoBar.js';
 import Header from './Components/header.js';
 import Home from './Components/home.js';
+import CurrentClass from './Components/currentClass.js';
 import Apply from './Components/apply.js';
 import About from './Components/about.js';
 import Courses from './Components/courses.js';
@@ -42,8 +43,8 @@ const routeItems = [
   component:Contact
 },
 {
-  path: '/new',
-  component:About
+  path: '/currentClass',
+  component:CurrentClass
 },
   {
       path: '/apply',
