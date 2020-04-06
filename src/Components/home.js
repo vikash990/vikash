@@ -14,15 +14,15 @@ const HeadingWrapper = styled('div')`
     width: 500px;
     margin-left: 400px;
      @media(max-width:768px) {
-          margin-left:10px;
+          margin-left:16px;
           width: 300px;
       }
 
 `;
 const ExploreWrapper = styled('h4')`
-     margin:20px 0px 0px 80px;
+     margin:20px 0px 20px 80px;
       @media(max-width:768px) {
-          margin:20px 0px 0px 25px;
+          margin:20px 0px 20px 25px;
       }
 
 `;
@@ -68,10 +68,17 @@ const KnowMoreWrapper=styled('div')`
 
    display:flex;
    width:100px;
-   height:40px;
+   height:35px;
    padding:3px 0px 0px 6px;
    background-color:orange;
    border-radius:9px;
+
+`;
+const ExploreNameWrapper = styled('div')`
+  display:flex;
+  flex-direction:column;
+  margin:70px 0px 0px 70px;
+  
 
 `;
 
@@ -84,7 +91,7 @@ const CourseWrapper = styled('div')`
   display:flex;
   flex-direction:column;
   justify-content:space-around;
-  margin:60px 40px 60px 70px;
+  margin:40px 40px 60px 70px;
   width:220px;
   height:200px;
   
@@ -109,11 +116,52 @@ const SubjectWrapper = styled('div')`
 const TimeFeesWrapper = styled('div')`
     display:flex;
     flex-direction:row;
-    justify-content:space-around;
-    
+    justify-content:space-around;  
     text-align:center;
     
   
+`;
+const ApplyKnowMoreWrapper = styled('div')`
+   
+    display:flex;
+    flex-direction:row-reverse;
+    padding-left:5px;
+    margin-right:20px;
+
+`;
+const ApplyWrapper=styled('a')`
+
+   display:flex;
+   width:55px;
+   height:30px;
+   padding:3px 0px 0px 6px;
+   background-color:orange;
+   border-radius:9px;
+   color:white;
+
+   &:hover {
+  color:black;
+  text-decoration:none;
+}
+
+`;
+
+const WhyUsWrapper = styled('div')`
+   
+   display:flex;
+   flex-direction:column;
+   margin:10px 0px 0px 50px;
+
+`;
+
+const DifferentHeadWrapper=styled('div')`
+   margin-bottom:20px;
+
+`;
+
+const DifferentParaWrapper=styled('div')`
+
+
 `;
 
 const subjectInfo= [
@@ -197,6 +245,13 @@ const subjectInfo= [
 
      },
       {  
+         heading:"Git & GitHub",
+         subject:"Git and Github",
+         duration:"2 months",
+         fees:"500/-"
+
+   },
+      {  
          heading:"Ds and Algo",
          subject:"DataStructure and Algorithm",
          duration:"3 months",
@@ -249,6 +304,9 @@ class Home extends React.Component{
                 </KnowMoreWrapper>
              </ColWrapper>      
           </RowWrapper>
+          <ExploreNameWrapper>
+          <h6>Explore Our Courses</h6>
+          </ExploreNameWrapper>
           <AllCourseWrapper>
               {subjectInfo.map((item,index) => (
                    <CourseWrapper key={index}>
@@ -258,11 +316,27 @@ class Home extends React.Component{
                          <p> {item.duration}</p>
                          <p>{item.fees}</p>
                        </TimeFeesWrapper>
-                    </CourseWrapper>
+                       <ApplyKnowMoreWrapper>
+                           <ApplyWrapper target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfu0Iw5dSJNbymQetE7trMsoil-WWqUfylVgyg7GC0TYjdECw/viewform?vc=0&c=0&w=1">Apply</ApplyWrapper>
+                       </ApplyKnowMoreWrapper>
+                   </CourseWrapper>
 
             ))
            }
            </AllCourseWrapper>
+           <WhyUsWrapper>
+            <DifferentHeadWrapper>
+               <h4>How we are different?</h4>
+            </DifferentHeadWrapper>
+             <DifferentParaWrapper>
+               <p>Live session by Expert.</p>
+               <p>Get your doubt resolved anytime.</p>
+               <p>Free demo session.</p>
+               <p>Limited student in one batch because we don't compromise with quality</p>
+               <p>Carrier counselling session.</p>
+               <p>Enroll with our program and pay after 10 days because we care for your satifaction.</p>
+            </DifferentParaWrapper>
+           </WhyUsWrapper>
          
        </HomeWrapper>
         );

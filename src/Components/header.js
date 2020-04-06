@@ -45,7 +45,7 @@ const SliderToggleWrapper=styled('div')`
    }
 `;
 
-const AnchorTagWrapper=styled('a')`
+const ApplyWrapper=styled('a')`
 display: flex;
 flex-direction: column;
 padding: 0 10px;
@@ -90,7 +90,7 @@ class Header extends React.Component{
            <ComapnyNameWrapper>DevikTech </ComapnyNameWrapper> 
             <Spacer/>
            
-       <AnchorTagWrapper target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfu0Iw5dSJNbymQetE7trMsoil-WWqUfylVgyg7GC0TYjdECw/viewform?vc=0&c=0&w=1">Apply</AnchorTagWrapper> 
+       <ApplyWrapper target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfu0Iw5dSJNbymQetE7trMsoil-WWqUfylVgyg7GC0TYjdECw/viewform?vc=0&c=0&w=1">Apply</ApplyWrapper> 
         </NavWrapper>
         );
 
