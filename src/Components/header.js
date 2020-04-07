@@ -67,7 +67,7 @@ border: 1px solid white;
 `;
 const ComapnyNameWrapper = styled('h4')`
      color:white;
-     padding:4px 300px;
+     padding:4px 200px;
      @media(max-width:769px){
         display:none;
     }

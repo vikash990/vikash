@@ -21,7 +21,6 @@ const NavWrapper = styled('div')`
    transition:transform 0.5s ease-out;
     `;
 
-
 const NavLinkWrapper= styled(NavLink)`
    list-style:none;
    display:flex;
@@ -46,7 +45,7 @@ const SideDrawer = props => {
            <NavLinkWrapper to ="/about" exact >About</NavLinkWrapper>
            <NavLinkWrapper to ="/courses" exact >Courses</NavLinkWrapper>
            <NavLinkWrapper to ="/contact" exact >Contact</NavLinkWrapper>
-           <NavLinkWrapper to ="/new" exact >New</NavLinkWrapper>
+           <NavLinkWrapper to ="/currentClass" exact >Current Class</NavLinkWrapper>
     </NavWrapper>
     )
 

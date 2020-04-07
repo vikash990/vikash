@@ -313,8 +313,8 @@ class Home extends React.Component{
                       <HeadingSubWrapper> <h6>{item.heading} </h6></HeadingSubWrapper>
                       <SubjectWrapper><p>{item.subject}</p></SubjectWrapper>
                       <TimeFeesWrapper>
-                         <p> {item.duration}</p>
-                         <p>{item.fees}</p>
+                        {/*  <p> {item.duration}</p>
+                         <p>{item.fees}</p> */}
                        </TimeFeesWrapper>
                        <ApplyKnowMoreWrapper>
                            <ApplyWrapper target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfu0Iw5dSJNbymQetE7trMsoil-WWqUfylVgyg7GC0TYjdECw/viewform?vc=0&c=0&w=1">Apply</ApplyWrapper>

@@ -157,7 +157,7 @@ class CurrentClass extends React.Component{
         <div>
             <NoteWrapper>
                 <h4>We don't charge any fees for first 10 days.It is like a free demo for you.We take money 
-                    only if you like the class because we care for your for your satisfaction.</h4>
+                    only if you like the class because we care for  your satisfaction.</h4>
             </NoteWrapper>
            <AllCourseWrapper>
               {upComingBatches.map((item,index) => (
@@ -166,12 +166,12 @@ class CurrentClass extends React.Component{
                       <HeadingSubWrapper> <h6>{item.subject} </h6></HeadingSubWrapper>
                       <SubjectWrapper><p>{item.date}</p></SubjectWrapper>
                       <TimeFeesWrapper>
-                         <p> {item.duration}</p>
-                         <p>{item.fees}</p>
+                         {/* <p> {item.duration}</p>
+                         <p>{item.fees}</p> */}
                        </TimeFeesWrapper>
                        <ApplyKnowMoreWrapper>
                          <ContactWrapper>
-                           <p>6299172103</p>
+                           <p>9117018454</p>
                         </ContactWrapper>
                            <ApplyWrapper target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfu0Iw5dSJNbymQetE7trMsoil-WWqUfylVgyg7GC0TYjdECw/viewform?vc=0&c=0&w=1">Register</ApplyWrapper>
                        </ApplyKnowMoreWrapper>
