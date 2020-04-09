@@ -119,12 +119,13 @@ class Footer extends React.Component{
                       <Head4Wrapper>Work with Us</Head4Wrapper>
                        <p>Instructor</p>
                        <p>Marketing</p> 
-                       <p>Content Development</p>                
+                       <p>Content Development</p>    
+                       <p>Intership</p>              
                </ColWrapper>
                <ColWrapper xs={6} sm={3}>                
                       <Head4Wrapper>Contact Us</Head4Wrapper>
                        <p>9117018454</p>
-                       <p>6299172103</p>                 
+                       <p>9718365756</p>                 
                </ColWrapper>        
             </RowWrapper>
             <FollowWrapper>

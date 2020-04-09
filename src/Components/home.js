@@ -12,7 +12,7 @@ const HeadingWrapper = styled('div')`
     display: flex;
     flex-direction: column;
     width: 500px;
-    margin-left: 400px;
+    margin:10px 0px 0px 400px;
      @media(max-width:768px) {
           margin-left:16px;
           width: 300px;
@@ -28,15 +28,13 @@ const ExploreWrapper = styled('h4')`
 `;
 const NavLinkWrapper= styled(NavLink)`
     
-    
       color:white;
       text-decoration:none;
-      &:hover {
-        
+    
+      &:hover {    
         color:black;
         text-decoration:none;
-      }
-    
+      }    
 `;
 
 const RowWrapper=styled('div')`
@@ -106,12 +104,13 @@ const CourseWrapper = styled('div')`
 `;
 const HeadingSubWrapper = styled('div')`
    text-align:center;
+   padding-top:15px;
   
   
 `;
 const SubjectWrapper = styled('div')`
-   
-    text-align:center;
+      text-align:center;
+      margin:40p 0x 20px 0px;
 `;
 const TimeFeesWrapper = styled('div')`
     display:flex;
@@ -123,10 +122,10 @@ const TimeFeesWrapper = styled('div')`
 `;
 const ApplyKnowMoreWrapper = styled('div')`
    
-    display:flex;
-    flex-direction:row-reverse;
+    display:flex;  
+    width:120px;
     padding-left:5px;
-    margin-right:20px;
+    margin:10px 0px 5px 70px;
 
 `;
 const ApplyWrapper=styled('a')`
@@ -174,7 +173,7 @@ const subjectInfo= [
 
      },
      {
-         heading:"WebDevelopment Junior",
+         heading:"Web Development Junior",
          subject:"HTML,CSS,JavaScript",
          duration:"3 months",
          fees:"5000/-"
@@ -213,8 +212,8 @@ const subjectInfo= [
      },
      {
          
-         heading:"MERN Stack",
-         subject:"MongoDb,Express,React,Nodejs",
+         heading:"Full Stack",
+         subject:"MERN Stack",
          duration:"4 months",
          fees:"6000/-"
 
@@ -292,7 +291,7 @@ class Home extends React.Component{
                 <h5>Online Class</h5>
                 <p>Live Lectures by Experts</p>
                 <KnowMoreWrapper>
-                   <NavLinkWrapper to ="/knowMoreJunior" exact >Know More</NavLinkWrapper>
+                   <NavLinkWrapper to ="/courses" exact >Know More</NavLinkWrapper>
                 </KnowMoreWrapper>           
              </ColWrapper>
              <ColWrapper  xs={12} sm={3}>
@@ -336,8 +335,7 @@ class Home extends React.Component{
                <p>Carrier counselling session.</p>
                <p>Enroll with our program and pay after 10 days because we care for your satifaction.</p>
             </DifferentParaWrapper>
-           </WhyUsWrapper>
-         
+           </WhyUsWrapper>        
        </HomeWrapper>
         );
 

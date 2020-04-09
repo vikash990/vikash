@@ -44,8 +44,8 @@ const AddressWrapper = styled('div')`
     width:300px;
 }
     
-
 `;
+
 class Contact extends Component {
   
   render() {
@@ -62,7 +62,8 @@ class Contact extends Component {
                  Bengaluru - 560034</p>
             <p></p>
            <p>Email:-DevikTechie@gmail.com</p>
-           <p>Phone:-9117018454</p>
+           <p>Contact Us</p>
+           <p>9117018454,19718365756</p>  
         </AddressWrapper>
       </ContactWrapper>
     );
