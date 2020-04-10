@@ -61,9 +61,9 @@ class Contact extends Component {
                  4th Block, Koramangala,
                  Bengaluru - 560034</p>
             <p></p>
-           <p>Email:-DevikTechie@gmail.com</p>
+           <p>Email:-info@deviktech.com</p>
            <p>Contact Us</p>
-           <p>9117018454,19718365756</p>  
+           <p>9117018454,9718365756</p>  
         </AddressWrapper>
       </ContactWrapper>
     );

@@ -133,10 +133,10 @@ class Footer extends React.Component{
                    <h4>FOLLOW</h4>
                 </FollowNameWrapper>
                 <SocialLinkWrapper>
-                   <AnchorWrapper href="https://www.facebook.com/vikashdubeycodingclub" target="_blank"><img src={logof}/></AnchorWrapper>
-                   <AnchorWrapper href="https://twitter.com/VikashD39681388" target="_blank"><img src={logot}/></AnchorWrapper>
-                   <AnchorWrapper href="https://www.linkedin.com/in/vikash-dubey-1b7914171/" target="_blank"><img src={logol}/></AnchorWrapper>
-                    <AnchorWrapper href="https://www.instagram.com/vikash__dubey__/" target="_blank"><img src={logoi}/></AnchorWrapper>
+                   <AnchorWrapper href="https://www.facebook.com/Deviktech-101424994871042/" target="_blank"><img src={logof}/></AnchorWrapper>
+                   {/* <AnchorWrapper href="https://twitter.com/VikashD39681388" target="_blank"><img src={logot}/></AnchorWrapper>
+                   <AnchorWrapper href="https://www.linkedin.com/in/vikash-dubey-1b7914171/" target="_blank"><img src={logol}/></AnchorWrapper> */}
+                    <AnchorWrapper href="https://instagram.com/deviktechie?igshid=n4o5da45otwy" target="_blank"><img src={logoi}/></AnchorWrapper>
                 </SocialLinkWrapper>
             </FollowWrapper>
             </FooterWrapper>

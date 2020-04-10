@@ -108,6 +108,14 @@ const HeadingSubWrapper = styled('div')`
   
   
 `;
+ 
+const OfferWrapper = styled('div')`
+  
+    text-align:center;
+    padding:15px;
+
+`;
+
 const SubjectWrapper = styled('div')`
       text-align:center;
       margin:40p 0x 20px 0px;
@@ -163,6 +171,7 @@ const DifferentParaWrapper=styled('div')`
 
 `;
 
+
 const subjectInfo= [
      {
          heading:"Python Junior",
@@ -173,22 +182,22 @@ const subjectInfo= [
 
      },
      {
-         heading:"Web Development Junior",
-         subject:"HTML,CSS,JavaScript",
+         heading:"Frontend  Development ",
+         subject:"HTML,CSS,JavaScript,git and github",
          duration:"3 months",
          fees:"5000/-"
 
 
      },
      {   
-         heading:"C senior",
+         heading:" ",
          subject:"C",
          duration:"2 months",
          fees:"2500/-"
 
      },
      { 
-         heading:"C++ senior",
+         heading:"",
          subject:"C++",
          duration:"3 months",
          fees:"3000/-"
@@ -196,15 +205,15 @@ const subjectInfo= [
      },
      {
          
-         heading:"Python senior",
-         subject:"C++",
+         heading:"",
+         subject:"Advance Python",
          duration:"3 months",
          fees:"3000/-"
 
      },
      {  
         
-         heading:"Java senior",
+         heading:"",
          subject:"Core Java",
          duration:"3 months",
          fees:"3000/-"
@@ -221,7 +230,7 @@ const subjectInfo= [
 
      {
                
-         heading:"Frontend",
+         heading:"Advance Frontend",
          subject:"ReactJs and Redux",
          duration:"1 months",
          fees:"2500/-"
@@ -243,29 +252,23 @@ const subjectInfo= [
          fees:"2000/-"
 
      },
+     ,
       {  
-         heading:"Git & GitHub",
-         subject:"Git and Github",
-         duration:"2 months",
-         fees:"500/-"
-
-   },
-      {  
-         heading:"Ds and Algo",
-         subject:"DataStructure and Algorithm",
+         heading:" ",
+         subject:"Data Structure and Algorithm",
          duration:"3 months",
          fees:"5000/-"
 
      },
       {  
-         heading:"Data Structures",
+         heading:"",
          subject:"Data Structures",
          duration:"2 months",
          fees:"3000/-"
 
      },
       {  
-         heading:"Algorithm",
+         heading:"",
          subject:"Algorithm",
          duration:"2 months",
          fees:"3000/-"
@@ -285,6 +288,11 @@ class Home extends React.Component{
              <p>DevikTech students are always updated according to the current technologies.
                 They are 3 years ahead of the student of their age.</p>
           </HeadingWrapper>
+          <OfferWrapper>
+              <h6>
+                  We are providing  10 days free regular class on all the coures because we care for student satisfaction.
+              </h6>
+           </OfferWrapper>
           <RowWrapper >
              <ColWrapper  xs={12} sm={3}>
                 <p>Junior</p>

@@ -94,7 +94,7 @@ class App extends React.Component{
     return(
       <Router>
         <MainWrapper>
-          <InfoBar/>
+          {/* <InfoBar/> */}
           <Header drawerClickHandler={this.drawerToggleClickedHandler}/>
           <SideDrawer show={this.state.sideDrawerOpen}/>
           {backDrop}
