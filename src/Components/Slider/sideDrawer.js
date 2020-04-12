@@ -42,10 +42,10 @@ const SideDrawer = props => {
     return(
      <NavWrapper className={drawerClasses}>        
            <NavLinkWrapper to ="/" exact >Home</NavLinkWrapper>
-           <NavLinkWrapper to ="/about" exact >About</NavLinkWrapper>
            <NavLinkWrapper to ="/courses" exact >Courses</NavLinkWrapper>
-           <NavLinkWrapper to ="/contact" exact >Contact</NavLinkWrapper>
-           <NavLinkWrapper to ="/currentClass" exact >Current Class</NavLinkWrapper>
+           <NavLinkWrapper to ="/about" exact >About Us</NavLinkWrapper>
+           <NavLinkWrapper to ="/contact" exact >Contact Us</NavLinkWrapper>
+          {/*  <NavLinkWrapper to ="/currentClass" exact >Current Class</NavLinkWrapper> */}
     </NavWrapper>
     )
 

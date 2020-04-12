@@ -4,6 +4,7 @@ import styled from "styled-components";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import SliderToggle from './Slider/sliderToggle.js';
+import logof from '../Images/facebook.png';
 
 const NavWrapper = styled('div')`
         display: flex;
@@ -35,6 +36,16 @@ const NavLinkWrapper= styled(NavLink)`
     
 `;
 
+const AllLinkWrapper = styled('div')`
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    width:400px;
+    margin-left:30px ;
+
+
+`;
+
 const Spacer = styled('div')`
     flex:1
 
@@ -62,17 +73,9 @@ border: 1px solid white;
   text-decoration:none;
 }
 
-
-
 `;
-const ComapnyNameWrapper = styled('h4')`
-     color:white;
-     padding:4px 200px;
-     @media(max-width:769px){
-        display:none;
-    }
 
-`;
+
 
 class Header extends React.Component{
 
@@ -82,14 +85,14 @@ class Header extends React.Component{
             <SliderToggleWrapper>
                 <SliderToggle click={this.props.drawerClickHandler}/>
             </SliderToggleWrapper>
-           <NavLinkWrapper to ="/" exact >Home</NavLinkWrapper>
-           <NavLinkWrapper to ="/about" exact >About</NavLinkWrapper>
-           <NavLinkWrapper to ="/courses" exact >Courses</NavLinkWrapper>
-           <NavLinkWrapper to ="/contact" exact >Contact</NavLinkWrapper>
-           <NavLinkWrapper to ="/currentClass" exact >Current Classes</NavLinkWrapper>
-           <ComapnyNameWrapper>DevikTech </ComapnyNameWrapper> 
-            <Spacer/>
-           
+            <AllLinkWrapper>
+                <NavLinkWrapper to ="/" exact ><img src={logof}></img></NavLinkWrapper>
+                <NavLinkWrapper to ="/courses" exact >Courses</NavLinkWrapper>
+                <NavLinkWrapper to ="/about" exact >About Us</NavLinkWrapper>      
+                <NavLinkWrapper to ="/contact" exact >Contact Us</NavLinkWrapper>
+           </AllLinkWrapper>{/* 
+                <NavLinkWrapper to ="/currentClass" exact >Current Classes</NavLinkWrapper>   */}     
+            <Spacer/>          
        <ApplyWrapper target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfu0Iw5dSJNbymQetE7trMsoil-WWqUfylVgyg7GC0TYjdECw/viewform?vc=0&c=0&w=1">Apply</ApplyWrapper> 
         </NavWrapper>
         );
