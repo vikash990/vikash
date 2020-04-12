@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router,Redirect} from 'react-router-dom';
+import {BrowserRouter as Router} from 'react-router-dom';
 import Route from 'react-router-dom/Route';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styled from "styled-components";
@@ -19,7 +19,6 @@ import BackDrop from './Components/BackDrop/backDrop.js';
 import Footer from './Components/footer.js';
 import KnowMoreJunior from './Components/knowMoreJunior.js';
 import KnowMoreSenior from './Components/knowMoreSenior.js';
-import WrongUrl from './Components/404file.js';
 
 const MainWrapper =styled('div')`
   height:100%;
@@ -69,12 +68,6 @@ const routeItems = [
     component: KnowMoreSenior
 
 },
-{
-  path: '/404file',
-  component: WrongUrl
-
-}
-
 ];
 
 
@@ -109,9 +102,7 @@ class App extends React.Component{
              <Route key={index} path={item.path} exact strict component={item.component}/>
 
             ))
-            
            }
-          <Redirect to="/404file"></Redirect>
         </MainWrapper>
         <Footer/>
       </Router>

@@ -4,7 +4,7 @@ import styled from "styled-components";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import SliderToggle from './Slider/sliderToggle.js';
-import logof from '../Images/facebook.png';
+import logod from '../Images/deviktechlogo.png';
 
 const NavWrapper = styled('div')`
         display: flex;
@@ -13,7 +13,6 @@ const NavWrapper = styled('div')`
         padding:12px 15px 12px 15px;
         background: rgba(0, 0, 0, 0.9);
             
-
     `;
 
 const NavLinkWrapper= styled(NavLink)`
@@ -29,7 +28,6 @@ const NavLinkWrapper= styled(NavLink)`
         color:black;
         text-decoration:none;
       }
-
       @media(max-width:768px) {
           display:none;
       }
@@ -42,13 +40,10 @@ const AllLinkWrapper = styled('div')`
     justify-content:space-around;
     width:400px;
     margin-left:30px ;
-
-
 `;
 
 const Spacer = styled('div')`
     flex:1
-
 `;
 const SliderToggleWrapper=styled('div')`
    @media(min-width:769px){
@@ -72,7 +67,6 @@ border: 1px solid white;
   color:black;
   text-decoration:none;
 }
-
 `;
 
 
@@ -86,7 +80,7 @@ class Header extends React.Component{
                 <SliderToggle click={this.props.drawerClickHandler}/>
             </SliderToggleWrapper>
             <AllLinkWrapper>
-                <NavLinkWrapper to ="/" exact ><img src={logof}></img></NavLinkWrapper>
+                <NavLinkWrapper to ="/" exact ><img src={logod}></img></NavLinkWrapper>
                 <NavLinkWrapper to ="/courses" exact >Courses</NavLinkWrapper>
                 <NavLinkWrapper to ="/about" exact >About Us</NavLinkWrapper>      
                 <NavLinkWrapper to ="/contact" exact >Contact Us</NavLinkWrapper>
