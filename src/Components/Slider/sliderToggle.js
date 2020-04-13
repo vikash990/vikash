@@ -2,6 +2,8 @@ import React from 'react';
 import styled from "styled-components";
 import {NavLink} from 'react-router-dom';
 
+/* import dblogo from "../Components/deviktechlogo.png"; */
+
 const NavWrapper = styled('div')`
         display: flex;
         width:20px;
@@ -84,7 +86,7 @@ const SliderToggle = props => (
         <ButtonLine/>
         <ButtonLine/>
     </ButtonWrapper>
-    <ComapnyNameWrapper>DevikTech </ComapnyNameWrapper> 
+   {/*  <NavLinkWrapper><img src={dblogo}/></NavLinkWrapper> */}
  </NavWrapper>
 );
 
